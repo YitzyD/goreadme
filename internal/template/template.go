@@ -125,7 +125,7 @@ var types = template.Must(base.Parse(`
 
 {{ range .Types }}
 
-### type [{{ .Name }}]({{ urlOrName (index $.Files .Pos.File) }}#L{{ .Pos.Line }})
+### type [{{ .Name }}]
 
 {{ inlineCodeEllipsis .Decl.Text }}
 
